@@ -12,10 +12,10 @@
         }
 
         body {
-            font-family: 'Verdana', 'Arial', sans-serif;
-            font-size: 10pt;
-            line-height: 1.65;
-            color: #1a1a1a;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.7;
+            color: #000000;
             background: #ffffff;
             padding: 0.5in;
             max-width: 8.5in;
@@ -35,9 +35,9 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            border-bottom: 4px solid #1a1a1a;
+            border-bottom: 2px solid #000000;
             padding-bottom: 12px;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
         }
 
         .header-left {
@@ -45,31 +45,31 @@
         }
 
         .name {
-            font-size: 32pt;
-            font-weight: 900;
-            margin-bottom: 4px;
-            color: #1a1a1a;
-            letter-spacing: -0.5px;
-            line-height: 1;
+            font-size: 28pt;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #000000;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
         }
 
         .title {
-            font-size: 13pt;
-            font-weight: 600;
-            color: #4a4a4a;
+            font-size: 12pt;
+            font-weight: normal;
+            color: #000000;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         .header-right {
             text-align: right;
             font-size: 9.5pt;
             line-height: 1.9;
-            color: #4a4a4a;
+            color: #000000;
         }
 
         .contact-line {
-            margin-bottom: 2px;
+            margin-bottom: 3px;
         }
 
         .section {
@@ -85,52 +85,63 @@
 
         .section-title {
             font-size: 12pt;
-            font-weight: 800;
+            font-weight: bold;
             text-transform: uppercase;
-            color: #1a1a1a;
-            letter-spacing: 1.5px;
+            color: #000000;
+            letter-spacing: 1px;
             margin-right: 12px;
             white-space: nowrap;
         }
 
         .section-line {
             flex: 1;
-            height: 2px;
-            background-color: #1a1a1a;
+            height: 1px;
+            background-color: #000000;
         }
 
         .summary {
             text-align: justify;
             line-height: 1.75;
-            color: #2a2a2a;
-            padding-left: 5px;
+            color: #000000;
+            padding: 0 5px;
         }
 
         .skills-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px 20px;
-            margin-top: 10px;
-            padding-left: 5px;
+            margin-top: 12px;
+            padding: 0 5px;
         }
 
-        .skill-group {
-            margin-bottom: 8px;
+        .skill-category {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
         }
 
-        .skill-group-title {
-            font-weight: 700;
-            font-size: 9.5pt;
-            color: #1a1a1a;
-            margin-bottom: 4px;
+        .skill-category::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 12pt;
+            color: #000000;
+        }
+
+        .skill-category-title {
+            font-weight: bold;
+            font-size: 10pt;
+            color: #000000;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.8px;
+            margin-bottom: 4px;
+            display: inline-block;
+            margin-right: 8px;
         }
 
         .skill-list {
             font-size: 9.5pt;
-            color: #4a4a4a;
-            line-height: 1.6;
+            color: #000000;
+            line-height: 1.8;
+            display: inline;
         }
 
         .experience-item, .project-item {
@@ -150,29 +161,29 @@
         }
 
         .job-title, .project-title {
-            font-weight: 700;
+            font-weight: bold;
             font-size: 11pt;
-            color: #1a1a1a;
-            margin-bottom: 2px;
+            color: #000000;
+            margin-bottom: 3px;
         }
 
         .company-name, .project-company {
-            font-weight: 600;
+            font-weight: bold;
             font-size: 10pt;
-            color: #4a4a4a;
-            margin-bottom: 2px;
+            color: #000000;
+            margin-bottom: 3px;
         }
 
         .location {
-            font-size: 9pt;
-            color: #6a6a6a;
+            font-size: 9.5pt;
+            color: #000000;
             font-style: italic;
         }
 
         .date {
-            font-size: 9.5pt;
-            font-weight: 700;
-            color: #1a1a1a;
+            font-size: 10pt;
+            font-weight: bold;
+            color: #000000;
             white-space: nowrap;
             text-align: right;
         }
@@ -181,7 +192,7 @@
             margin-top: 10px;
             text-align: justify;
             line-height: 1.7;
-            color: #2a2a2a;
+            color: #000000;
         }
 
         .job-description ul, .project-description ul {
@@ -194,16 +205,30 @@
         }
 
         .project-tech {
-            font-size: 9pt;
-            color: #6a6a6a;
+            font-size: 9.5pt;
+            color: #000000;
             margin-top: 8px;
             font-style: italic;
         }
 
+        .project-link {
+            margin-top: 6px;
+            font-size: 9.5pt;
+        }
+
+        .project-link a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .project-link a:hover {
+            text-decoration: none;
+        }
+
         .divider {
             height: 1px;
-            background: linear-gradient(to right, transparent, #cccccc, transparent);
-            margin: 16px 0;
+            background-color: #cccccc;
+            margin: 18px 0;
         }
     </style>
 </head>
@@ -236,25 +261,25 @@
             <div class="section-line"></div>
         </div>
         <div class="skills-container">
-            <div class="skill-group">
-                <div class="skill-group-title">Frontend</div>
-                <div class="skill-list">React.js, JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Tailwind CSS, jQuery</div>
+            <div class="skill-category">
+                <span class="skill-category-title">Frontend:</span>
+                <span class="skill-list">React.js, JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Tailwind CSS, jQuery</span>
             </div>
-            <div class="skill-group">
-                <div class="skill-group-title">Backend</div>
-                <div class="skill-list">Node.js, Express.js</div>
+            <div class="skill-category">
+                <span class="skill-category-title">Backend:</span>
+                <span class="skill-list">Node.js, Express.js</span>
             </div>
-            <div class="skill-group">
-                <div class="skill-group-title">Database</div>
-                <div class="skill-list">MongoDB, SQL</div>
+            <div class="skill-category">
+                <span class="skill-category-title">Database:</span>
+                <span class="skill-list">MongoDB, SQL</span>
             </div>
-            <div class="skill-group">
-                <div class="skill-group-title">Tools & Practices</div>
-                <div class="skill-list">Git, GitHub, Deployment, REST APIs, Responsive Design</div>
+            <div class="skill-category">
+                <span class="skill-category-title">Tools & Practices:</span>
+                <span class="skill-list">Git, GitHub, Deployment, REST APIs, Responsive Design</span>
             </div>
-            <div class="skill-group">
-                <div class="skill-group-title">Languages</div>
-                <div class="skill-list">C, C++</div>
+            <div class="skill-category">
+                <span class="skill-category-title">Programming Languages:</span>
+                <span class="skill-list">C, C++</span>
             </div>
         </div>
     </div>
@@ -324,7 +349,10 @@
                 Developed a comprehensive full-stack ethnic wear e-commerce platform featuring secure authentication mechanisms, comprehensive admin dashboard, complete order management system, and integrated payment workflow. Built using React.js for the frontend, Node.js and Express.js for the backend, MongoDB for database management, and Tailwind CSS for modern styling. Implemented role-based access control to ensure secure user and admin interactions. Optimized application performance for scalability, handling high traffic volumes and ensuring fast load times. The platform supports product catalog management, shopping cart functionality, order tracking, and secure payment processing.
             </div>
             <div class="project-tech">
-                <strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB, Tailwind CSS
+                <strong>Technologies:</strong> React.js, TypeScript, Node.js, Express.js, MongoDB, Tailwind CSS
+            </div>
+            <div class="project-link">
+                <strong>URL:</strong> <a href="http://samjubaa.com/" target="_blank">http://samjubaa.com/</a>
             </div>
         </div>
 
@@ -340,7 +368,10 @@
                 Built a personal portfolio application with a secure admin panel for managing projects, skills, and content dynamically without requiring code changes. Implemented comprehensive authentication and authorization features to protect admin access. Developed content management features using the MERN stack, allowing real-time updates to portfolio content. Ensured fully responsive design across all devices, providing an optimal viewing experience. The application enables seamless content updates, project additions, and skill management through an intuitive admin interface.
             </div>
             <div class="project-tech">
-                <strong>Technologies:</strong> MERN Stack (MongoDB, Express.js, React.js, Node.js)
+                <strong>Technologies:</strong> MERN Stack (MongoDB, Express.js, React.js, Node.js), TypeScript
+            </div>
+            <div class="project-link">
+                <strong>URL:</strong> <a href="https://darshan-chovatiya.vercel.app/" target="_blank">https://darshan-chovatiya.vercel.app/</a>
             </div>
         </div>
 
@@ -358,6 +389,9 @@
             <div class="project-tech">
                 <strong>Technologies:</strong> MERN Stack, RESTful APIs
             </div>
+            <div class="project-link">
+                <strong>URL:</strong> <a href="https://bloghavenshop.vercel.app/" target="_blank">https://bloghavenshop.vercel.app/</a>
+            </div>
         </div>
 
         <div class="divider"></div>
@@ -374,6 +408,9 @@
             <div class="project-tech">
                 <strong>Technologies:</strong> React.js, HTML5, CSS3, Responsive Design
             </div>
+            <div class="project-link">
+                <strong>URL:</strong> <a href="https://woodmartpro.vercel.app/" target="_blank">https://woodmartpro.vercel.app/</a>
+            </div>
         </div>
 
         <div class="divider"></div>
@@ -389,6 +426,9 @@
             </div>
             <div class="project-tech">
                 <strong>Technologies:</strong> HTML5, CSS3, JavaScript, Responsive Design
+            </div>
+            <div class="project-link">
+                <strong>URL:</strong> <a href="https://notechweb.vercel.app/" target="_blank">https://notechweb.vercel.app/</a>
             </div>
         </div>
     </div>
